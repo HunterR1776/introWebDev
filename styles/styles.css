@@ -34,20 +34,23 @@ main {
     max-width: 840px;
 }
 
+aside h2 {
+    position: absolute;
+    top: 675px;
+    left: 145px;
+}
+
 aside {
     width: 20rem;
     text-align: center;
+    
 }
 
-aside h2 {
-    position: absolute;
-    top: 570px;
-    left: 145px;
-}
 
 aside img {
     width: 200px;
     height: auto;
+    
 }
 
 footer {

@@ -23,6 +23,7 @@ body, h1, h2, p {
     margin: 0;
     padding: 0;
     font-family: var(--heading-font); 
+    text-align: center;
   }
   
   /* Header styles */
@@ -32,6 +33,7 @@ body, h1, h2, p {
     align-items: center;
     padding: 1em;
     background-color: var(--accent1-color);
+    max-width: 100%;
   }
   
   nav a {
@@ -112,7 +114,64 @@ body, h1, h2, p {
   max-width: 200px; 
   height: auto;
 }
+
+.adventure-section figure {
+  display: inline-block;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 18%; 
+ } 
+
+.adventure-section img {
+    display: inline-block; 
+    margin-right: -1px; 
+    margin-bottom: 4px;
+    vertical-align: top; 
+    width: 200px; 
+    height: 150px; 
+}
+
+
+.adventure-section h2 {
+  font-size: 25px;
+  color: #000;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%; 
+}
   
+.adventure-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+
+.adventure-section .image-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: nowrap; 
+  gap: 1px; 
+  width: 100%; 
+}
+
+figure {
+  margin: 0; 
+  width: auto; 
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
+figure figcaption {
+  text-align: center;
+  margin-top: 5px;
+}
+
   section p, footer p {
     padding: 10px 0;
   }

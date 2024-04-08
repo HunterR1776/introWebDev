@@ -158,7 +158,7 @@ form input[type="submit"]:hover {
 
 /* Footer styles */
 footer {
-    background-color: var(--nav-background-color);
+    background-color: var(--accent2-color);
     color: var(--nav-link-color);
     display: flex;
     justify-content: space-between;

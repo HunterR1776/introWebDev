@@ -22,34 +22,40 @@
     </header>
     <main>
         <section class="contact-section">
-        <div class="styled-box">
-            <h1>Contact Form</h1>
-            <form action="#" method="POST" class="styled-box">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            
-                <label for="purpose">Purpose:</label>
-                <div class="select-wrapper">
-                    <select id="purpose" name="purpose" required>
-                        <option value="">Select Purpose</option>
-                        <option value="General Inquiry">General Inquiry</option>
-                        <option value="Reservation Question">Reservation Question</option>
-                        <option value="Website Suggestion">Website Suggestion</option>
-                    </select>
-                </div>
-            
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            
-                <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-            
-                <input type="submit" value="Submit" class="submit-btn">
-            </form>
-        </div>
+            <div class="styled-box">
+                <h1>Contact Form</h1>
+                <form action="#" method="POST" class="styled-box">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="purpose">Purpose:</label>
+                    <div class="select-wrapper">
+                        <p>Select Purpose:</p>
+                        <input type="radio" id="generalInquiry" name="purpose" value="General Inquiry" required>
+                        <label for="generalInquiry">General Inquiry</label><br>
+                        
+                        <input type="radio" id="reservationQuestion" name="purpose" value="Reservation Question" required>
+                        <label for="reservationQuestion">Reservation Question</label><br>
+                        
+                        <input type="radio" id="websiteSuggestion" name="purpose" value="Website Suggestion" required>
+                        <label for="websiteSuggestion">Website Suggestion</label>
+                    </div>
+                
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                
+                    <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                
+                    <button type="submit">
+                        Send Your Inquiry <img src="images/checkmark.png" alt="Send Icon" style="width:20px; height:20px; vertical-align:middle;">
+                    </button>
+                </form>
+            </div>
+        </section>
         <div class="employee-images">
             <div class="employee-image">
                 <img src="images/happy_employee1.png" alt="Employee 1">

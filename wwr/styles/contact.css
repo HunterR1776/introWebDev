@@ -140,22 +140,37 @@ form input[type="submit"]:hover {
 }
 
 .employee-image img {
-    width: 100px; /* Adjust as necessary */
-    height: 100px;
-    border-radius: 50%; /* Circular images */
+    width: 200px; 
+    height: 200px;
+    border-radius: 5%; 
     margin-bottom: 0.5em;
 }
 
-.employee-caption {
-    font-style: normal;
-    font-weight: 700;
-}
+
 
 /* Contact info styles */
-.contact-info {
-    text-align: left;
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-top: 45px;
 }
 
+.contact-info {
+    text-align: left;
+    width: calc(50% - 20px); 
+}
+
+.map iframe {
+    width: 400px;
+    height: 500px;
+    border-radius: 5%;
+}
+
+.map {
+    width: calc(50% - 20px); 
+    text-align: right; 
+}
 /* Footer styles */
 footer {
     background-color: var(--accent2-color);

@@ -15,7 +15,7 @@
     --nav-link-color: #ffffff;
     --nav-background-color: #251605;
     --nav-hover-link-color: white;
-    --nav-hover-background-color: #032136;
+    --nav-hover-background-color: #dbe5ec;
   
   }
  /* General reset and basic styles */
@@ -201,8 +201,8 @@ figure figcaption {
   
   .text-content {
     display: flex;
-    flex: block; /* This allows the text content to grow and take available space */
-    margin-right: 20px; /* This creates a gap between the text and the images */
+    flex: block; 
+    margin-right: 20px; 
   }
   
   .image-content {
@@ -233,7 +233,7 @@ figure figcaption {
     border-radius: 5px;
   }
   
-  .styled-box {
+.styled-box {
     width: 500px;
     height: auto;
     background-color: #fff;
@@ -278,10 +278,7 @@ form input[type="submit"]:hover {
     background-color: darken(var(--button-color), 10%);
 }
 
-.full-width-cta {
-  width: 100%;
-  background-color: var(--primary-color); 
-  overflow: hidden; 
+
 
 .call-to-action {
   max-width: 1000px; 
@@ -304,7 +301,7 @@ form input[type="submit"]:hover {
 .cta-button {
   display: inline-block;
   padding: 1em 2em;
-  background-color: var(--accent2-color); /* An accent color that stands out */
+  background-color: var(--accent2-color); 
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -314,31 +311,84 @@ form input[type="submit"]:hover {
 }
 
 .cta-button:hover, .cta-button:focus {
-  background-color: var(--secondary-color); /* A secondary color for hover state */
+  background-color: var(--secondary-color); 
   color: #000;
   text-decoration: none;
 }
+.trip-descriptions {
+  background-color: var(--nav-hover-background-color);
+  margin-top: 20px;
+  display: block;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.trip {
+  display: block;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.trip-photo {
+  margin-right: 700px;
+  width: 300px; 
+  height: auto; 
+}
+
+.trip-info {
+  text-align: left;
+
+}
+
+.trip-info h3 {
+  margin: 0 0 10px 0; 
+  text-align: left;
+}
+
+.trip-info p {
+  margin: 0; 
+  text-align: left;
+}
+
+.table-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.trip-table {
+  border-collapse: collapse;
+  
+}
+
+.trip-table th, .trip-table td {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ddd;
+  
+}
+
+
 
   /* Footer styles */
   footer {
     background-color: var(--accent2-color);
+    color: var(--nav-link-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-  }
-  
-  footer p {
-    margin: 0;
-    color: white;
-  }
-  
-  .sociallinks {
-    display: flex;
-  }
-  
-  .sociallinks img {
-    width: 24px; 
-    height: 24px;
+    font-size: 0.875rem;
+}
+
+footer .sociallinks a {
     margin-left: 10px;
-  }
+}
+
+footer .sociallinks img {
+    width: 24px; /* Adjust as necessary */
+    filter: brightness(0) invert(1); /* White icons */
+}

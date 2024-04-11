@@ -55,7 +55,7 @@ body, h1, h2, p {
   
   .hero img {
     width: 100%;
-    height: 80%;
+    height: 60%;
     display: block;
   }
   
@@ -101,6 +101,24 @@ body, h1, h2, p {
     vertical-align: top; 
     width: 200px; 
     height: 150px; 
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 .container {
   display: grid; 
@@ -175,7 +193,132 @@ figure figcaption {
   section p, footer p {
     padding: 10px 0;
   }
+
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+  }
   
+  .text-content {
+    display: flex;
+    flex: block; /* This allows the text content to grow and take available space */
+    margin-right: 20px; /* This creates a gap between the text and the images */
+  }
+  
+  .image-content {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-row-gap: 20px; 
+    align-self: start; 
+  }
+  
+  .rafting-adventure,
+  .rafting-team {
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .rafting-adventure img {
+    margin-left: 100px;
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .rafting-team img {
+    margin-right:300px;
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .styled-box {
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5em;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: var(--button-color);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: darken(var(--button-color), 10%);
+}
+
+.full-width-cta {
+  width: 100%;
+  background-color: var(--primary-color); 
+  overflow: hidden; 
+
+.call-to-action {
+  max-width: 1000px; 
+  margin: auto; 
+  padding: 2em;
+  text-align: center;
+}
+
+
+.call-to-action h2 {
+  color: #000;
+  margin-bottom: 0.5em;
+}
+
+.call-to-action p {
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: var(--accent2-color); /* An accent color that stands out */
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover, .cta-button:focus {
+  background-color: var(--secondary-color); /* A secondary color for hover state */
+  color: #000;
+  text-decoration: none;
+}
+
   /* Footer styles */
   footer {
     background-color: var(--accent2-color);
